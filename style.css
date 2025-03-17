@@ -1,0 +1,69 @@
+/* html,body{
+    height:100%;
+    width:100%; */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:#fff;
+    font-family: 'montserrat';
+}
+#nav{
+    height:100px;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    padding:0 10px;
+    gap:40px;
+    position: fixed;
+    z-index: 99;
+}
+#nav img{
+    height:80px;
+    width:100px;
+}
+#nav h4{
+    text-transform: uppercase;
+    font-weight: 300;
+}
+video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    position:fixed;
+    z-index: -1;
+}
+#main{
+    position: relative;
+    background-color: rgba(20, 1, 1, 0.349);
+}
+#page1{
+    height:100vh;
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#page1 h1{
+    font-size: 100px;
+    font-weight: 900;
+    position:relative;
+}
+#page1 h1::before{
+    content:"Interview.Help";
+    position:absolute;
+    color: black;
+    top:-4px;
+    left:-4px;
+    -webkit-text-stroke: 1px #95C11E;
+    z-index:-1;
+}
+#page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+}
